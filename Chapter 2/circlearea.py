@@ -1,3 +1,4 @@
+"""Callculating diameter, circumference and area of a circle with radius 2"""
 pi = 3.14159
 radius = 2
 diameter = 2 * radius
