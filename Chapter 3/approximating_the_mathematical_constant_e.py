@@ -1,16 +1,10 @@
-number = 1
-count = number
+count = 1
 factorial = 1
-num = number
-e = 0;
+exponential = 1
 
-while count >= number:
+while count <= 10:
 	factorial *= (count)
-	count = count - 1
-	for number in range(1):
-		e += (1 / factorial)
-		print(e, end=',')
+	exponential += (1 / factorial)
+	print(f"Exponential at {count}: {exponential:.4f}")
+	count += 1
 		
-	number += 1
-	if number == 11:
-		break
