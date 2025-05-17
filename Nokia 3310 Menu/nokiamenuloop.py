@@ -348,18 +348,184 @@ def navigate_call_register_menu():
 						case _: print("\nInvalid Entry")
 			case "8": 
 				while True:
-					received_calls = input("----PREPAID CREDIT----\nPrepaid credit\n0. Back\n")
-					match received_calls:
+					prepaid_credit = input("----PREPAID CREDIT----\nPrepaid credit\n0. Back\n")
+					match prepaid_credit:
 						case "0": break
-						case _: print("\nInvalid Entry")
-			
-
-					
-				
-						
+						case _: print("\nInvalid Entry")			
 			case "0": break
 			case _: print("\nInvalid Entry")
 
+def navigate_tones_menu():
+	while True:
+		tones_choice = input("""
+----TONES----
+1. Ringing tone
+2. Ringing volume
+3. Incoming call alert
+4. Composer
+5. Message alert tone
+6. Keypad tones
+7. Warning and game tones
+8. Vibrating alert
+9. Screen saver
+0. Back
+""")
+		match tones_choice:
+			case "1": 
+				while True:
+					ringing_tone = input("----RINGING TONE----\nRinging tone\n0. Back\n")
+					match ringing_tone:
+						case "0": break
+						case _: print("\nInvalid Entry")
+			case "2": 
+				while True:
+					ringing_volume = input("----RINGING VOLUME----\nRinging volume\n0. Back\n")
+					match ringing_volume:
+						case "0": break
+						case _: print("\nInvalid Entry")
+			case "3": 
+				while True:
+					incoming_alert = input("----INCOMING CALL ALERT----\nIncoming call alert\n0. Back\n")
+					match incoming_alert:
+						case "0": break
+						case _: print("\nInvalid Entry")
+			case "4": 
+				while True:
+					composer = input("----COMPOSER----\nComposer\n0. Back\n")
+					match composer:
+						case "0": break
+						case _: print("\nInvalid Entry")
+			case "5": 
+				while True:
+					message_alert_tone = input("----MESSAGE ALERT TONE\nMessage alert tone\n0. Back\n")
+					match message_alert_tone:
+						case "0": break
+						case _: print("\nInvalid Entry")
+			case "6": 
+				while True:
+					keypad_tones = input("----KEYPAD TONES----\nKeypad tones\n0. Back\n")
+					match keypad_tones:
+						case "0": break
+						case _: print("\nInvalid Entry")
+			case "7": 
+				while True:
+					warning_and_game_tones = input("----WARNING AND GAME TONES----\nWarning and game tones\n0. Back\n")
+					match warning_and_game_tones:
+						case "0": break
+						case _: print("\nInvalid Entry")
+			case "8": 
+				while True:
+					vibrating_alert = input("----VIBRATING ALERT----\nVibrating alert\n0. Back\n")
+					match vibrating_alert:
+						case "0": break
+						case _: print("\nInvalid Entry")
+			case "9": 
+				while True:
+					screen_saver = input("----SCREEN SAVER----\nScreen saver\n0. Back\n")
+					match screen_saver:
+						case "0": break
+						case _: print("\nInvalid Entry")	
+			case "0": break
+			case _: print("\nInvalid Entry")			
+			
+def navigate_settings_menu():
+	while True:
+		settings_choice = input("""
+----SETTINGS----
+1. Call settings
+2. Phone settings
+3. Security settings
+4. Restore factory settings
+0. Back
+""")
+		match settings_choice:
+			case "1":
+				while True:
+					call_settings_choice = input("----CALL SETTINGS----\n1. Automatic redial\n2. Speed dialing\n3. Call waiting options\n4. Own number sending\n5. Phone line in use\n6. Automatic answer\n0. Back\n")
+					match call_settings_choice:
+						case "1": 
+							while True:
+								automatic_redial = input("----AUTOMATIC REDIAL----\nAutomatic redial\n0. Back\n")
+								match automatic_redial:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "2": 
+							while True:
+								speed_dialling = input("----SPEED DIALLING----\nSpeed dialling\n0. Back\n")
+								match speed_dialling:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "3": 
+							while True:
+								call_waiting_options = input("----CALL WAITING OPTIONS----\nCall waiting options\n0. Back\n")
+								match call_waiting_options:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "4": 
+							while True:
+								own_number_sending = input("----OWN NUMBER SENDING----\nOwn number sending\n0. Back\n")
+								match own_number_sending:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "5": 
+							while True:
+								phone_line_in_use = input("----PHONE LINE IN USE----\nPhone line in use\n0. Back\n")
+								match phone_line_in_use:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "6": 
+							while True:
+								automatic_answer = input("----AUTOMATIC ANSWER----\nAutomatic answer\n0. Back\n")
+								match automatic_answer:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "0": break
+						case _: print("\nInvalid Entry")	
+			case "2":
+				while True:
+					phone_settings_choice = input("----PHONE SETTINGS----\n1. Language\n2. Cell info display\n3. Welcome note\n4. Network selection\n5. Lights\n6. Confirm SIM service actions\n0. Back\n")
+					match call_settings_choice:
+						case "1": 
+							while True:
+								language = input("----LANGUAGE----\nLanguage\n0. Back\n")
+								match language:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "2": 
+							while True:
+								cell_info_display = input"----CELL INFO DISPLAY----\nCell info display\n0. Back\n")
+								match cell_info_display:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "3": 
+							while True:
+								cell_info_display = input("----WELCOME NOTE----\nWelcome note\n0. Back\n")
+								match cell_info_display:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "4": 
+							while True:
+								network = input("----NETWORK SELECTION----\nNetwork selection\n0. Back\n")
+								match network:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "5": 
+							while True:
+								lights = input("---LIGHTS----\nLights\n0. Back\n")
+								match lights:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "6": 
+							while True:
+								sim_service_actions = input("----CONFIRM SIM SERVICE ACTIONS----\nConfirm SIM service actions\n0. Back\n")
+								match sim_service_actions:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "0": break
+						case _: print("\nInvalid Entry")		
+			
+			case "0": break
+			case _: print("\nInvalid Entry")	
 			
 						
 
@@ -390,8 +556,8 @@ def nokia_menu():
 			case "2": navigate_messages_menu() 
 			case "3": navigate_chat_menu() 
 			case "4": navigate_call_register_menu() 
-			case "5": tones() 
-			case "6": settings()
+			case "5": navigate_tones_menu() 
+			case "6": navigate_settings_menu()
 			case "7": call_divert()
 			case "8": games() 
 			case "9": calculator() 
