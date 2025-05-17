@@ -493,7 +493,7 @@ def navigate_settings_menu():
 									case _: print("\nInvalid Entry")
 						case "2": 
 							while True:
-								cell_info_display = input"----CELL INFO DISPLAY----\nCell info display\n0. Back\n")
+								cell_info_display = input("----CELL INFO DISPLAY----\nCell info display\n0. Back\n")
 								match cell_info_display:
 									case "0": break
 									case _: print("\nInvalid Entry")
@@ -522,8 +522,55 @@ def navigate_settings_menu():
 									case "0": break
 									case _: print("\nInvalid Entry")
 						case "0": break
+						case _: print("\nInvalid Entry")	
+			case "3":
+				while True:
+					security_settings_choice = input("----SECURITY SETTINGS----\n1. PIN code request\n2. Call barring service\n3. Fixed dialling\n4. Closed user group\n5. Phone security\n6. Change access codes\n0. Back\n")
+					match security_settings_choice:
+						case "1": 
+							while True:
+								pin_code_request = input("----PIN CODE REQUEST----\nPIN code request\n0. Back\n")
+								match language:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "2": 
+							while True:
+								call_barring_service = input("----CALL BARRING SERVICE----\nCall barring service\n0. Back\n")
+								match call_barring_service:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "3": 
+							while True:
+								fixed_dialling = input("----FIXED DIALLING----\nFixed dialling\n0. Back\n")
+								match fixed_dialling:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "4": 
+							while True:
+								closed_user_goup = input("----CLOSED USER GROUP----\nClosed user group\n0. Back\n")
+								match closed_user_goup:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "5": 
+							while True:
+								phone_security = input("----PHONE SECURITY----\nPhone security\n0. Back\n")
+								match phone_security:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "6": 
+							while True:
+								change_access_codes = input("----CHANGE ACCESS CODES----\nChange access codes\n0. Back\n")
+								match change_access_codes:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "0": break
 						case _: print("\nInvalid Entry")		
-			
+			case "4": 
+				while True:
+					restore_factory_settings = input("----RESTORE FACTORY SETTINGS----\nRestore factory settings\n0. Back\n")
+					match restore_factory_settings:
+						case "0": break
+						case _:("Invalid Entry")			
 			case "0": break
 			case _: print("\nInvalid Entry")	
 			
