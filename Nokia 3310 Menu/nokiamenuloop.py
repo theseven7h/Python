@@ -200,8 +200,163 @@ def navigate_messages_menu():
 						
 						case "0" : break
 						case _: print("\nInvalid Entry")
+			case "8": 
+				while True:
+					info_service = input("----INFO SERVICE----\nInfo service\n0. Back\n")
+					match info_service:
+						case "0" : break
+						case _: print("\nInvalid Entry")
+			case "9": 
+				while True:
+					voice_mailbox_number = input("----VOICE MAILBOX NUMBER----\nVoice mailbox number\n0. Back\n")
+					match voice_mailbox_number:
+						case "0" : break
+						case _: print("\nInvalid Entry")
+			case "10": 
+				while True:
+					service_command_editor = input("----SERVICE COMMAND EDITOR----\nService command editor\n0. Back\n")
+					match service_command_editor:
+						case "0" : break
+						case _: print("\nInvalid Entry")
 			
+			case "0": break
+			case _: print("\nInvalid Entry")
 			
+def navigate_chat_menu():
+	while True:
+		chat = input("----CHAT----\nChat\n0. Back\n")
+		match chat:
+			case "0": break
+			case _: print("\nInvalid Entry")
+			
+def navigate_call_register_menu():
+	while True:
+		call_register_menu = input("""
+----CALL REGISTER----
+1. Missed calls
+2. Received calls
+3. Dialled numbers
+4. Erase recent call lists
+5. Show call duration
+6. Show call costs
+7. Call cost settings
+8. Prepaid unit
+0. Back
+""")
+		match call_register_menu:
+			case "1": 
+				while True:
+					missed_calls = input("----MISSED CALLS----\nMissed calls\n0. Back\n")
+					match missed_calls:
+						case "0": break
+						case _: print("\nInvalid Entry")
+			case "2": 
+				while True:
+					received_calls = input("----RECEIVED CALLS----\nReceived calls\n0. Back\n")
+					match received_calls:
+						case "0": break
+						case _: print("\nInvalid Entry")
+			case "3": 
+				while True:
+					dialled_numbers = input("----DIALLED NUMBERS----\nDialled numbers\n0. Back\n")
+					match dialled_numbers:
+						case "0": break
+						case _: print("\nInvalid Entry")
+			case "4": 
+				while True:
+					erase_recent_call_lists = input("----ERASE RECENT CALL LISTS----\nErase recent call lists\n0. Back\n")
+					match erase_recent_call_lists:
+						case "0": break
+						case _: print("\nInvalid Entry")
+			case "5": 
+				while True:
+					show_call_duration = input("----SHOW CALL DURATION----\n1. Last call duration\n2. All calls' duration\n3. Received calls' duration\n4. Dialled calls' duration\n5. Clear timers\n0. Back\n")
+					match show_call_duration:
+						case "1": 
+							while True:
+								last_call_duration = input("----LAST CALL DURATION----\nLast call duration\n0. Back\n")
+								match last_call_duration:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "2": 
+							while True:
+								all_calls_duration = input("----ALL CALLS' DURATION----\nAll calls' duration\n0. Back\n")
+								match all_calls_duration:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "3": 
+							while True:
+								received_calls = input("----RECEIVED CALLS----\nReceived calls' duration\n0. Back\n")
+								match received_calls:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "4": 
+							while True:
+								dialled_calls = input("----DIALLED CALLS----\nDialled calls' duration\n0. Back\n")
+								match dialled_calls:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "5": 
+							while True:
+								clear_timers = input("----CLEAR TIMERS----\nClear timers\n0. Back\n")
+								match clear_timers:
+									case "0": break
+									case _: print("\nInvalid Entry")			
+						case "0": break
+						case _: print("\nInvalid Entry")
+			case "6": 
+				while True:
+					show_call_costs = input("----SHOW CALL COSTS----\n1. Last call cost\n2. All calls' cost\n3. Clear counters\n0. Back\n")
+					match show_call_costs:
+						case "1": 
+							while True:
+								last_call_costs = input("----LAST CALL COSTS----\nLast call cost\n0. Back\n")
+								match last_call_costs:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "2": 
+							while True:
+								all_calls_costs = input("----ALL CALLS' COSTS----\nAll calls' cost\n0. Back\n")
+								match all_calls_costs:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "3": 
+							while True:
+								clear_counters = input("----CLEAR COUNTERS----\nClear counters\n0. Back\n")
+								match clear_counters:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "0": break
+						case _: print("\nInvalid Entry")
+			case "7": 
+				while True:
+					call_cost_settings = input("----CALL COST SETTINGs----\n1. Call cost limit\n2. Show costs in\n0. Back\n")
+					match call_cost_settings:
+						case "1": 
+							while True:
+								call_cost_limit = input("----CALL COST LIMIT----\nCall cost limit\n0. Back\n")
+								match call_cost_limit:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "2": 
+							while True:
+								show_costs_in = input("----SHOW COSTS IN----\nShow costs in\n0. Back\n")
+								match show_costs_in:
+									case "0": break
+									case _: print("\nInvalid Entry")
+						case "0": break
+						case _: print("\nInvalid Entry")
+			case "8": 
+				while True:
+					received_calls = input("----PREPAID CREDIT----\nPrepaid credit\n0. Back\n")
+					match received_calls:
+						case "0": break
+						case _: print("\nInvalid Entry")
+			
+
+					
+				
+						
 			case "0": break
 			case _: print("\nInvalid Entry")
 
@@ -233,8 +388,8 @@ def nokia_menu():
 		match menu_choice:
 			case "1": navigate_phone_book_menu() 
 			case "2": navigate_messages_menu() 
-			case "3": chat() 
-			case "4": call_register() 
+			case "3": navigate_chat_menu() 
+			case "4": navigate_call_register_menu() 
 			case "5": tones() 
 			case "6": settings()
 			case "7": call_divert()
