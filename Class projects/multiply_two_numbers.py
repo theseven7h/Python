@@ -101,15 +101,6 @@ def multiply_two(first_number, second_number):
 		else:
 			return product
 			
-#first_number = 4.5
-#second_number = 2
-
-#print(multiply_two(first_number, second_number))
-			
-first_number = input("Enter first number: ")
-second_number = input("Enter second number: ")
-
-print(f"Product of {first_number} and {second_number} is", multiply_two(first_number, second_number))
 
 
 
