@@ -224,7 +224,7 @@ def navigate_messages_menu():
 			
 def navigate_chat_menu():
 	while True:
-		chat = input("----CHAT----\nChat\n0. Back\n")
+		chat = input("\n----CHAT----\nChat\n0. Back\n")
 		match chat:
 			case "0": break
 			case _: print("\nInvalid Entry")
@@ -574,9 +574,91 @@ def navigate_settings_menu():
 			case "0": break
 			case _: print("\nInvalid Entry")	
 			
-						
+def navigate_call_divert_menu():
+	while True:
+		call_divert = input("\n----CALL DIVERT----\nCall divert\n0. Back\n")
+		match call_divert:
+			case "0": break
+			case _: print("\nInvalid Entry")	
+			
+def navigate_games_menu():
+	while True:
+		games = input("\n----GAMES----\nGames\n0. Back\n")
+		match games:
+			case "0": break
+			case _: print("\nInvalid Entry")
+			
+def navigate_calculator_menu():
+	while True:
+		calculator = input("\n----CALCULATOR----\nCalculator\n0. Back\n")
+		match calculator:
+			case "0": break
+			case _: print("\nInvalid Entry")
+			
+def navigate_reminders_menu():
+	while True:
+		reminders = input("\n----REMINDERS----\nReminders\n0. Back\n")
+		match reminders:
+			case "0": break
+			case _: print("\nInvalid Entry")
+			
+def navigate_clock_menu():
+	while True:
+		clock = input("\n----CLOCK----\n1. Alarm clock\n2. Clock settings\n3. Date setting\n4. Stopwatch\n5. Countdown timer\n6. Auto update of date and time\n0. Back\n")
+		match clock:
+			case "1": 
+				while True:
+					alarm_clock = input("\n----ALARM CLOCK----\nAlarm clock\n0. Back\n")
+					match alarm_clock:
+						case "0": break
+						case _: print("\nInvalid Entry")
+			case "2": 
+				while True:
+					clock_settings = input("\n----CLOCK SETTINGS----\nClock settings\n0. Back\n")
+					match clock_settings:
+						case "0": break
+						case _: print("\nInvalid Entry")
+			case "3": 
+				while True:
+					date_settings = input("\n----DATE SETTING----\nDate setting\n0. Back\n")
+					match date_settings:
+						case "0": break
+						case _: print("\nInvalid Entry")
+			case "4": 
+				while True:
+					stopwatch = input("\n----STOPWATCH----\nStopwatch\n0. Back\n")
+					match stopwatch:
+						case "0": break
+						case _: print("\nInvalid Entry")
+			case "5": 
+				while True:
+					countdown_timer = input("----COUNTDOWN TIMER----\nCountdown timer\n0. Back\n")
+					match countdown_timer:
+						case "0": break
+						case _: print("\nInvalid Entry")
+			case "6": 
+				while True:
+					auto_update = input("----AUTO UPDATE OF DATE AND TIME----\nAuto update of date and time\n0. Back\n")
+					match auto_update:
+						case "0": break
+						case _: print("\nInvalid Entry")
+			case "0": break
+			case _: print("\nInvalid Entry")						
 
+def navigate_profiles_menu():
+	while True:
+		profiles = input("\n----PROFILES----\nProfiles\n0. Back\n")
+		match profiles:
+			case "0": break
+			case _: print("\nInvalid Entry")						
 
+def navigate_sim_services_menu():
+	while True:
+		sim_services = input("\n----SIM SERVICES----\nSIM services\n0. Back\n")
+		match sim_services:
+			case "0": break
+			case _: print("\nInvalid Entry")
+	
 
 
 def nokia_menu():
@@ -596,7 +678,7 @@ def nokia_menu():
 11. Clock
 12. Profiles
 13. SIM services 
-0. Quit
+0. Back
 """)	
 		match menu_choice:
 			case "1": navigate_phone_book_menu() 
@@ -605,15 +687,24 @@ def nokia_menu():
 			case "4": navigate_call_register_menu() 
 			case "5": navigate_tones_menu() 
 			case "6": navigate_settings_menu()
-			case "7": call_divert()
-			case "8": games() 
-			case "9": calculator() 
-			case "10": reminders() 
-			case "11": clock() 
-			case "12": profiles() 
-			case "13": sim_services() 
+			case "7": navigate_call_divert_menu()
+			case "8": navigate_games_menu() 
+			case "9": navigate_calculator_menu() 
+			case "10": navigate_reminders_menu() 
+			case "11": navigate_clock_menu() 
+			case "12": navigate_profiles_menu() 
+			case "13": navigate_sim_services_menu() 
 			case "0": break
 			case _: print("\nInvalid entry")
+while True:
+	menu = input("""
+----NOKIA 3310----
+1. Main Menu
+0. Quit 
 	
-nokia_menu()
+""")	
+	match menu:
+		case "1": nokia_menu()
+		case "0": break
+		case _: print("\nInvalid entry")
 
