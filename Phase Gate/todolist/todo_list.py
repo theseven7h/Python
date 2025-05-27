@@ -21,6 +21,14 @@ def mark_tasks(tasks):
 	view_tasks(tasks)
 	mark = input("Which task number is completed: ")
 	
+def delete_tasks(tasks):
+	delete = input("Which task number do you intend deleting: ").strip()
+	delete = int(delete)
+	count = delete - 1
+	for index in range(len(tasks)):
+		if (index) == count:
+			tasks.pop(index)
+	return tasks
 
 
 

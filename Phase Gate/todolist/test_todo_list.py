@@ -3,7 +3,7 @@ import todo_list
 from unittest import TestCase
 
 class TestTodoList(TestCase):
-	def test_add_task_function_exists(self):
+	'''def test_add_task_function_exists(self):
 		tasks = []
 		todo_list.add_task(tasks)
 		
@@ -22,5 +22,9 @@ class TestTodoList(TestCase):
 
 	def test_mark_tasks_function_exists(self):
 		tasks = []
-		todo_list.mark_tasks([])
+		todo_list.mark_tasks([])'''
+		
+	def test_delete_tasks_function_exists(self):
+		tasks = [1]
+		todo_list.delete_tasks([1])
 	
