@@ -7,12 +7,23 @@ def add_task(tasks):
 
 def view_tasks(tasks):
 	if len(tasks) == 0:
-		return "There are no tasks to view"
+		notice = "There are no tasks to view" 
+		print(notice)
+		return notice
 	else:
 		count = 1
+		status = " "
 		for task in tasks:
-			print(f"Task {count}: {task}")
+			print(f"({status})Task {count}: {task}")
 			count += 1
+
+def mark_tasks(tasks):
+	view_tasks(tasks)
+	mark = input("Which task number is completed: ")
+	
+	
+
+
 
 
 def main():
