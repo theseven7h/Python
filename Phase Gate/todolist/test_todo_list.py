@@ -14,7 +14,7 @@ class TestTodoList(TestCase):
 		
 	def test_view_tasks_function_exists(self):
 		tasks = []
-		todo_list.view_tasks([]) 
+		todo_list.view_tasks([])  
 	
 	def test_view_tasks_function_informs_for_empty_list(self):
 		tasks = []
