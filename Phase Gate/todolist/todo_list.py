@@ -5,7 +5,7 @@ def add_task(tasks):
 	print("Task added!")
 	return tasks
 
-def view_tasks(tasks):
+def view_tasks(tasks, num=None):
 	if len(tasks) == 0:
 		notice = "There are no tasks to view" 
 		print(notice)
