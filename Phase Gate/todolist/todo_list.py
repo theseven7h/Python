@@ -5,24 +5,28 @@ def add_task(tasks):
 	print("Task added!")
 	return tasks
 
-def view_tasks(tasks, num=None):
+def view_tasks(tasks, check):
 	if len(tasks) == 0:
 		notice = "There are no tasks to view" 
 		print(notice)
 		return notice
 	else:
 		count = 1
-		status = " "
 		for task in tasks:
+			if count in check:
+				status = "X" 
+			else: status = " " 
 			print(f"({status})Task {count}: {task}")
 			count += 1
 
-def mark_tasks(tasks):
-	view_tasks(tasks)
-	mark = input("Which task number is completed: ")
+def mark_tasks(tasks,check):
+	view_tasks(tasks,check)
+	mark = int(input("Which task number is completed: "))
+	check.append(mark)
+	return check
 	
 def delete_tasks(tasks):
-	delete = input("Which task number do you intend deleting: ").strip()
+	delete = input("Which task number do you intend deleting: ")
 	delete = int(delete)
 	count = delete - 1
 	for index in range(len(tasks)):
@@ -32,7 +36,8 @@ def delete_tasks(tasks):
 
 
 
-'''def main():
+def main():
+	check = []
 	tasks = []
 	while True:
 		main_menu = input("""
@@ -46,12 +51,12 @@ def delete_tasks(tasks):
 		
 		match main_menu:
 			case "1": add_task(tasks)
-			case "2": view_tasks(tasks)
-			case "3": mark_tasks(tasks)
+			case "2": view_tasks(tasks,check)
+			case "3": mark_tasks(tasks,check) 
 			case "4": delete_tasks(tasks)
 			case "5": break
 			case _: print("Invalid input")
 			
 	
-main()'''
+main()
 	
